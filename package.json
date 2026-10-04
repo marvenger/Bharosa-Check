@@ -1,0 +1,13 @@
+{
+ "name": "bharosa-check",
+ "version": "1.0.0",
+ "description": "Explainable, private, on-device scam check for Indian retail investors",
+ "type": "module",
+ "license": "MIT",
+ "scripts": {
+  "test": "node --test tests/engine.test.mjs",
+  "eval": "node tests/eval.mjs",
+  "start": "python3 -m http.server 8080",
+  "build": "npx --yes esbuild@0.24.0 src/app.js --bundle --format=iife --outfile=dist/bharosa.js"
+ }
+}
